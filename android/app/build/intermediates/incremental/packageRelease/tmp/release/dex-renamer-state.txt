@@ -1,0 +1,7 @@
+#Mon Dec 30 22:09:27 WIB 2024
+base.0=C\:\\Users\\Dell\\OneDrive\\Desktop\\file coding\\absensi_app\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+base.1=C\:\\Users\\Dell\\OneDrive\\Desktop\\file coding\\absensi_app\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

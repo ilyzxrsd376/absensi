@@ -1,0 +1,303 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ilyasa.TJKT"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:2:1-61
+11-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:2:18-58
+12    <!--
+13         Required to query activities that can process text, see:
+14         https://developer.android.com/training/package-visibility and
+15         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+16
+17         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+18    -->
+19    <queries>
+19-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:41:5-46:15
+20        <intent>
+20-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:42:9-45:18
+21            <action android:name="android.intent.action.PROCESS_TEXT" />
+21-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:43:13-72
+21-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:43:21-70
+22
+23            <data android:mimeType="text/plain" />
+23-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:44:13-50
+23-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:44:19-48
+24        </intent>
+25        <intent>
+25-->[:file_picker] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\file_picker-8.1.7\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-12:18
+26            <action android:name="android.intent.action.GET_CONTENT" />
+26-->[:file_picker] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\file_picker-8.1.7\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-72
+26-->[:file_picker] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\file_picker-8.1.7\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:21-69
+27
+28            <data android:mimeType="*/*" />
+28-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:44:13-50
+28-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:44:19-48
+29        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+30        <package android:name="com.google.android.apps.maps" />
+30-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+30-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+31    </queries>
+32
+33    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+33-->[:location] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\location-7.0.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-81
+33-->[:location] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\location-7.0.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:22-78
+34    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
+34-->[:location] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\location-7.0.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:5-79
+34-->[:location] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\location-7.0.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:22-76
+35    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+35-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+35-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:22-76
+36    <uses-permission android:name="android.permission.INTERNET" />
+36-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
+36-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:24:22-64
+37
+38    <uses-feature
+38-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+39        android:glEsVersion="0x00020000"
+39-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+40        android:required="true" />
+40-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+41
+42    <permission
+42-->[androidx.core:core:1.13.1] C:\Users\Dell\.gradle\caches\transforms-3\73277e5b6481985df64a13761984f4f8\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+43        android:name="com.ilyasa.TJKT.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+43-->[androidx.core:core:1.13.1] C:\Users\Dell\.gradle\caches\transforms-3\73277e5b6481985df64a13761984f4f8\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+44        android:protectionLevel="signature" />
+44-->[androidx.core:core:1.13.1] C:\Users\Dell\.gradle\caches\transforms-3\73277e5b6481985df64a13761984f4f8\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+45
+46    <uses-permission android:name="com.ilyasa.TJKT.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+46-->[androidx.core:core:1.13.1] C:\Users\Dell\.gradle\caches\transforms-3\73277e5b6481985df64a13761984f4f8\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+46-->[androidx.core:core:1.13.1] C:\Users\Dell\.gradle\caches\transforms-3\73277e5b6481985df64a13761984f4f8\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+47
+48    <application
+49        android:name="android.app.Application"
+49-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:6:9-42
+50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+50-->[androidx.core:core:1.13.1] C:\Users\Dell\.gradle\caches\transforms-3\73277e5b6481985df64a13761984f4f8\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+51        android:extractNativeLibs="true"
+52        android:icon="@mipmap/ic_launcher"
+52-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:7:9-43
+53        android:label="Aplikasi Sekolah" >
+53-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:5:9-41
+54        <activity
+54-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:8:9-29:20
+55            android:name="com.ilyasa.TJKT.MainActivity"
+55-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:9:13-41
+56            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+56-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:14:13-163
+57            android:exported="true"
+57-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:10:13-36
+58            android:hardwareAccelerated="true"
+58-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:15:13-47
+59            android:launchMode="singleTop"
+59-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:11:13-43
+60            android:taskAffinity=""
+60-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:12:13-36
+61            android:theme="@style/LaunchTheme"
+61-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:13:13-47
+62            android:windowSoftInputMode="adjustResize" >
+62-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:16:13-55
+63
+64            <!--
+65                 Specifies an Android theme to apply to this Activity as soon as
+66                 the Android process has started. This theme is visible to the user
+67                 while the Flutter UI initializes. After that, this theme continues
+68                 to determine the Window background behind the Flutter UI.
+69            -->
+70            <meta-data
+70-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:21:13-24:17
+71                android:name="io.flutter.embedding.android.NormalTheme"
+71-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:22:15-70
+72                android:resource="@style/NormalTheme" />
+72-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:23:15-52
+73
+74            <intent-filter>
+74-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:25:13-28:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:26:17-68
+75-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:26:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:27:17-76
+77-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:27:27-74
+78            </intent-filter>
+79        </activity>
+80        <!--
+81             Don't delete the meta-data below.
+82             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+83        -->
+84        <meta-data
+84-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:32:9-34:33
+85            android:name="flutterEmbedding"
+85-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:33:13-44
+86            android:value="2" />
+86-->C:\Users\Dell\OneDrive\Desktop\file coding\absensi_app\android\app\src\main\AndroidManifest.xml:34:13-30
+87
+88        <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
+88-->[:barcode_scan2] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\barcode_scan2-4.3.3\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-84
+88-->[:barcode_scan2] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\barcode_scan2-4.3.3\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:19-81
+89
+90        <provider
+90-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:9-17:20
+91            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+91-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-82
+92            android:authorities="com.ilyasa.TJKT.flutter.image_provider"
+92-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+93            android:exported="false"
+93-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+94            android:grantUriPermissions="true" >
+94-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-47
+95            <meta-data
+95-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-16:75
+96                android:name="android.support.FILE_PROVIDER_PATHS"
+96-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-67
+97                android:resource="@xml/flutter_image_picker_file_paths" />
+97-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-72
+98        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+99        <service
+99-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-31:19
+100            android:name="com.google.android.gms.metadata.ModuleDependencies"
+100-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-78
+101            android:enabled="false"
+101-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-36
+102            android:exported="false" >
+102-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-37
+103            <intent-filter>
+103-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-26:29
+104                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+104-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:17-94
+104-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:25-91
+105            </intent-filter>
+106
+107            <meta-data
+107-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-30:36
+108                android:name="photopicker_activity:0:required"
+108-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-63
+109                android:value="" />
+109-->[:image_picker_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+17\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:17-33
+110        </service>
+111        <service
+111-->[:geolocator_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-12:56
+112            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+112-->[:geolocator_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-77
+113            android:enabled="true"
+113-->[:geolocator_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-35
+114            android:exported="false"
+114-->[:geolocator_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-37
+115            android:foregroundServiceType="location" />
+115-->[:geolocator_android] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-53
+116        <service
+116-->[:location] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\location-7.0.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-15:56
+117            android:name="com.lyokone.location.FlutterLocationService"
+117-->[:location] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\location-7.0.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-71
+118            android:enabled="true"
+118-->[:location] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\location-7.0.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-35
+119            android:exported="false"
+119-->[:location] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\location-7.0.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-37
+120            android:foregroundServiceType="location" /> <!-- Needs to be explicitly declared on P+ -->
+120-->[:location] C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\location-7.0.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-53
+121        <uses-library
+121-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+122            android:name="org.apache.http.legacy"
+122-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+123            android:required="false" />
+123-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\c63319d456d19071c9a56cbe189b1742\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+124
+125        <activity
+125-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\26ec87bb7d99b35cb06c20b9959aa093\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+126            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+126-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\26ec87bb7d99b35cb06c20b9959aa093\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+127            android:exported="false"
+127-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\26ec87bb7d99b35cb06c20b9959aa093\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+128            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+128-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\26ec87bb7d99b35cb06c20b9959aa093\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+129
+130        <meta-data
+130-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\83567fa261f1f05f2b6f7abcc6f7bb6d\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+131            android:name="com.google.android.gms.version"
+131-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\83567fa261f1f05f2b6f7abcc6f7bb6d\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+132            android:value="@integer/google_play_services_version" />
+132-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\83567fa261f1f05f2b6f7abcc6f7bb6d\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+133
+134        <uses-library
+134-->[androidx.window:window:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d6a722493901ed3fda5a757c276afe52\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+135            android:name="androidx.window.extensions"
+135-->[androidx.window:window:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d6a722493901ed3fda5a757c276afe52\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+136            android:required="false" />
+136-->[androidx.window:window:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d6a722493901ed3fda5a757c276afe52\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+137        <uses-library
+137-->[androidx.window:window:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d6a722493901ed3fda5a757c276afe52\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+138            android:name="androidx.window.sidecar"
+138-->[androidx.window:window:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d6a722493901ed3fda5a757c276afe52\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+139            android:required="false" />
+139-->[androidx.window:window:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d6a722493901ed3fda5a757c276afe52\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+140
+141        <provider
+141-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Dell\.gradle\caches\transforms-3\842968e031d19bf44901eeeebd8bdf38\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+142            android:name="androidx.startup.InitializationProvider"
+142-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Dell\.gradle\caches\transforms-3\842968e031d19bf44901eeeebd8bdf38\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+143            android:authorities="com.ilyasa.TJKT.androidx-startup"
+143-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Dell\.gradle\caches\transforms-3\842968e031d19bf44901eeeebd8bdf38\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+144            android:exported="false" >
+144-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Dell\.gradle\caches\transforms-3\842968e031d19bf44901eeeebd8bdf38\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+145            <meta-data
+145-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Dell\.gradle\caches\transforms-3\842968e031d19bf44901eeeebd8bdf38\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+146                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+146-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Dell\.gradle\caches\transforms-3\842968e031d19bf44901eeeebd8bdf38\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+147                android:value="androidx.startup" />
+147-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Dell\.gradle\caches\transforms-3\842968e031d19bf44901eeeebd8bdf38\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+148            <meta-data
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+149                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+150                android:value="androidx.startup" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+151        </provider>
+152
+153        <receiver
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+154            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+154-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+155            android:directBootAware="false"
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+156            android:enabled="true"
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+157            android:exported="true"
+157-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+158            android:permission="android.permission.DUMP" >
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+159            <intent-filter>
+159-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+160                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+160-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+160-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+161            </intent-filter>
+162            <intent-filter>
+162-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+163                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+163-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+163-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+164            </intent-filter>
+165            <intent-filter>
+165-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+166                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+166-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+166-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+167            </intent-filter>
+168            <intent-filter>
+168-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+169                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+169-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+169-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dell\.gradle\caches\transforms-3\a590180359335be1f9752e92159a0cb4\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+170            </intent-filter>
+171        </receiver>
+172    </application>
+173
+174</manifest>

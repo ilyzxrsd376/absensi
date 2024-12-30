@@ -1,0 +1,48 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // Flutter Gradle Plugin harus diterapkan setelah Android dan Kotlin Gradle Plugin.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.ilyasa.TJKT"
+    compileSdk = 34 // Sesuaikan dengan compileSdk versi proyek Anda
+    ndkVersion = "25.2.9519653" // Pastikan sesuai dengan NDK yang digunakan
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17 // Java 17 digunakan untuk kompatibilitas
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17" // Kotlin dengan target JVM 17
+    }
+
+    defaultConfig {
+        applicationId = "com.ilyasa.TJKT"
+        minSdk = 21 // Minimal versi SDK Android (disarankan 21 atau lebih tinggi)
+        targetSdk = 34 // Sesuaikan dengan targetSdk proyek Anda
+        versionCode = 1 // Ganti sesuai versi aplikasi Anda
+        versionName = "1.0.0" // Ganti sesuai versi aplikasi Anda
+    }
+
+    buildTypes {
+        release {
+            // Pengaturan untuk build release
+            shrinkResources false
+            minifyEnabled false // Set ke true jika Anda menggunakan proguard
+            signingConfig signingConfigs.debug // Ganti dengan release signing config jika sudah dibuat
+        }
+    }
+}
+
+flutter {
+    source = "../.." // Pastikan path ini sesuai dengan direktori proyek Flutter Anda
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    // Tambahkan dependensi lainnya jika diperlukan, misalnya library untuk QR Code Scanner
+    implementation "androidx.core:core-ktx:1.10.1" // Contoh tambahan library Android
+}
